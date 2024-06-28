@@ -1,0 +1,34 @@
+{
+	"name": "maispace/better-news",
+	"description": "Made from the maispace/template-typo3-extension",
+	"type": "typo3-cms-extension",
+	"homepage": "https://www.maispace.de",
+	"license": ["GPL-2.0-or-later"],
+	"keywords": ["TYPO3 CMS"],
+	"version": "1.0.0",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"sort-packages": false,
+		"platform": {
+			"php": "8.2"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "better_news"
+		}
+	},
+	"require": {
+		"php": "^8.2",
+		"typo3/cms-core": "^12.4 || ^13"
+	},
+	"autoload": {
+		"psr-4": {
+			"MaiSpace\\BetterNews\\": "Classes/"
+		}
+	},
+	"replace": {
+		"typo3-ter/my_ext": "*"
+	}
+}
